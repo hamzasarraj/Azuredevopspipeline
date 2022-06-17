@@ -29,7 +29,7 @@ stages:
         Dockerfile: '$(Build.SourcesDirectory)/Deploy-to-AKS/app/Dockerfile'
         tags: 
           $(tag)
-          latest
+          
     - task: PublishPipelineArtifact@1
       inputs:
         targetPath: '$(Pipeline.Workspace)/s/kubernetes'
