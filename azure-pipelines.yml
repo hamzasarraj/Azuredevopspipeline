@@ -65,5 +65,5 @@ stages:
           kubernetesServiceConnection: 'ClusterConn'
           namespace: 'default'
           manifests:
-            $(Pipeline.Workspace)/kubernetes/manifests/deployment.yml
-            $(Pipeline.Workspace)/kubernetes/manifests/service.yml 
+            $(Pipeline.Workspace)/Deploy-to-AKS/kubernetes/deployment.yml
+            $(Pipeline.Workspace)/Deploy-to-AKS/kubernetes/service.yml 
